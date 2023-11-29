@@ -1,0 +1,5 @@
+- name: sapnwase-ci.yml
+  ansible.builtin.import_playbook: sapnwase-ci.yml
+
+- name: sapnwase-aas.yml
+  ansible.builtin.import_playbook: sapnwase-aas.yml

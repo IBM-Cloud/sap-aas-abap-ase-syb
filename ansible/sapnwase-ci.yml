@@ -1,0 +1,10 @@
+---
+- name: CI Host
+  hosts: ci_host
+  gather_facts: true
+  pre_tasks:
+    - name: Import playbook variables
+      ansible.builtin.include_vars: "sapnwase-aas-vars.yml"
+  roles:
+    - sapnwcireq
+...
